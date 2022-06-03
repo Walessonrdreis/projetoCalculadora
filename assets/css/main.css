@@ -1,16 +1,134 @@
 *{
-    margin: 0;
+    margin: 0 ;
     padding: 0;
+    
     color: aliceblue;
     box-sizing: border-box;
 }
 div.container{
     position: relative;
     width:80%;
-    height: 100%;
+    height: auto;
     left: 10%;
-    background-color:aqua;
+    
+    
 }
+.reader{
+    width: auto;
+    height: 70px;
+    background-color: burlywood;
+}
+
+/**menu*/
+.nav-menu{
+    width: 100%;
+    height: 50px;
+    position: relative;
+   background-color: #000;
+    display: block;
+    
+}
+/*hamburguer*/
+
+.wrapper{
+   
+    width: 100%;
+    height: 60px;
+    display: flex;
+    
+  
+    
+}
+.checkbox{
+    height: 50px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    position: relative;/*para deixar os traços relativos a ele, o checkbox*/
+    cursor: pointer;
+    
+   
+    
+}
+.checkbox .trace{
+    width: 40px;
+    height:6px ;
+    background-color: white;
+    position: absolute;
+    border-radius: 4px;
+    transition: 0.5s ease-in-out;
+
+
+}
+/* Configurando os traços*/
+.checkbox .trace:nth-child(1){
+    top: 10px;
+    transform: rotate(0);
+}
+.checkbox .trace:nth-child(2){
+    top: 20px;
+    transform: rotate(0);
+}
+.checkbox .trace:nth-child(3){
+    top: 30px;
+    transform: rotate(0);
+}
+#toggle{
+    display: none;
+   
+}
+#toggle:checked + .checkbox .trace:nth-child(1) {/*o simbolo de adição +, é um seletor que significa o que está dentro*/
+    transform: rotate(45deg);
+    top: 27px;
+}
+
+#toggle:checked + .checkbox .trace:nth-child(2){
+   transform: translateX(-100px);
+   width: 30px;
+   visibility: hidden;
+   opacity: 0;
+}
+#toggle:checked + .checkbox .trace:nth-child(3){
+   transform: rotate(-45deg);
+   top: 28px;
+}
+/**/
+ul.nav-bar{
+    width:80%;
+    position: relative;
+    display: flex;
+    left: 10%;
+    flex-direction: row;
+    justify-content: right;
+    top: 10px;
+   
+
+}
+ul li {
+    list-style: none;
+    font-size: 18px;
+    margin-left: 10px;
+    letter-spacing: 1.5px;
+    
+}
+ul li a {
+    text-decoration: none;
+    text-transform: capitalize;
+
+} 
+ul li ul {
+    visibility: hidden;
+}
+
+
+
+
+
+
+main{
+    background-color: blueviolet;
+}
+
 .img{
     width: 200px;
     height: 400px;
@@ -153,7 +271,7 @@ input#pol, input#x3{
 @media screen and (max-width:374px){
     .calculadora{
         position: relative;
-        width: 100%;
+        width: 1050%;
         top: 10px;
     }
 }
