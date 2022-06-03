@@ -1,8 +1,159 @@
-nav.nav_bar{
+*{
+    margin: 0;
+    padding: 0;
+    color: aliceblue;
+    box-sizing: border-box;
+}
+div.container{
+    position: relative;
+    width:80%;
+    height: 100%;
+    left: 10%;
+    background-color:aqua;
+}
+.img{
+    width: 200px;
+    height: 400px;
     
 }
 
-ul li {
-    display: inline-block;
+/*calculadora*/
+div.calculadora{
+    width: 300px;
+    height: 570px;
+    margin: auto;
+    position: relative;
+    margin-top: 20px;
+    
+    text-align: center;
+   
+    background-color: #000;
+    border: 2px solid #000;
+    border-radius: 2ex;
+}
+div.botaos{
+    margin-top: 20px;
+    position: relative;
+}
+/*teclas*/
+#display{
+    width: 90%;
+    height: 80px;
+    border: 2px solid rgb(66, 65, 65);
+    border-radius: 1ex;
+    background-color: aliceblue;
+    margin-bottom: 80px;
+
+    position: relative;
+    top: 40px;
+   
+}
+label{
+    font-size: 8px;
+    position: absolute;
+    
+}
+input{
+    width: 30px;
+    border-radius: 0.5ex;
+    border-color: #21272f;
+    margin: 0px 8px 12px 8px;
+    color: aliceblue;
+    background-color: #706d72;
+}
+/*primeiro conjunto de botões*/
+.btn-1{
+  
+    height: 80px;
+}
+.btn-1 input#shift,
+.btn-1 input#alpha,
+.btn-1 input#mode-clr,
+.btn-1 input#on{
+width: 30px;
+margin: 0px 7px ;
+border-radius: 3ex;
+position: relative;
+top: 20px;
+
 }
 
+label.shift
+{
+  left: 10px;
+}
+label.alpha{
+    left: 50px;
+}
+.btn-1 input#shift,
+.btn-1 input#alpha{
+    right: 10px;
+    top: -5px;
+}
+
+input#replay{
+    width:70px;
+    height: 80px;
+    border-radius: 30rem 30rem 50rem 50rem;
+    color: #000;
+}
+
+label.mode-clr{
+    right: 50px;
+}
+label.on{
+    right: 15px;
+}
+.btn-1 input#mode-clr,
+.btn-1 input#on{
+    top: -5px;
+    left: 10px;
+}
+/*segundo ...*/
+.btn-2{
+    
+    height: 150px;
+    position: relative;
+}
+.btn-2 input{
+    position: relative;
+    background-color: #21272f;
+    color: aliceblue;
+    bottom: 10px;
+}
+input#x-1, input#nCr{
+    right: 50px;
+    bottom: 15px;
+}
+input#pol, input#x3{
+    left: 50px;
+    bottom: 15px;
+}
+
+/*terceiro...*/
+.btn-3{
+    
+   height:150px;
+  
+}
+.btn-3 input{
+    width: 40px;
+    height: 30px;
+
+    position: relative;
+    margin: 0px 8px 10px 8px;
+    bottom: 15px;
+    background-color: #706d72;
+    border-radius: 3px 3px 7px 7px;
+}
+.btn-3 input#del,.btn-3 input#ac{
+    background-color: brown;
+}
+
+@media screen and (max-width:374px){
+    .calculadora{
+        position: relative;
+        width: 100%;
+        top: 10px;
+    }
+}
