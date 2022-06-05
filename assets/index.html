@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./css/main.css">
   <title>Calculadora</title>
 </head>
+
 <body>
   <header class="reader">
     <h1>Calculadora </h1>
@@ -14,139 +16,116 @@
     <div class="container">
 
       <div class="wrapper">
-        <input type="checkbox"  id="toggle">
+        <input type="checkbox" id="toggle">
         <label for="toggle" class="checkbox">
-            <div class="trace"></div>
-            <div class="trace"></div>
-            <div class="trace"></div>
+          <div class="trace"></div>
+          <div class="trace"></div>
+          <div class="trace"></div>
         </label>
-        <ul class="nav-bar">
-          <li class="nav-itens"><a href="#">Home</a>
-            <ul class="sub-nav">
-              <li class="nav-itens"><a href="#">item01</a></li>
-              <li class="nav-itens"><a href="#">item02</a></li>
-              <li class="nav-itens"><a href="#">item03</a></li>
+
+
+        <ul>
+          <li><a href="#">Categorias</a>
+            <div class="wrapper2">
+              <!--primeiro-->
+              <input type="checkbox" id="toggle2">
+              <label for="toggle2" class="checkbox2">
+                <div class="trace2"></div>
+                <div class="trace2"></div>
+              </label>
+            </div>
+
+            <ul class="list-category">
+
+              <li><a href="#">Veículos</a></li>
+              <li><a href="#">Supermercado</a></li>
+              <li class="tecnology"><a href="#">Tecnologia</a>
+                <ul class="list-tecnologic">
+                  <h3>Tecnologia</h3>
+                  <li class="tecnologic-items"><a href="#">Celulares e Telefones</a>
+                  <ul>
+                    <li><a href="#">Celulares e Smartphones</a></li>
+                    <li><a href="#">Acessórios para Celulares</a></li>
+                    
+                  </ul>
+                  </li>
+                  <li class="tecnologic-items"><a href="#">Câmeras e Acessórios</a>
+                    <ul>
+                      <li><a href="#">Acessórios para Câmeras</a></li>
+                      <li><a href="#">Câmeras</a></li>
+                    </ul>
+
+                  </li>
+
+                  <li class="tecnologic-items"><a href="#">Games</a>
+                    <ul>
+                      <li><a href="#">Vídeo Games</a></li>
+                      <li><a href="#">Fliperamas e Arcade</a></li>
+                      
+                    </ul>
+                  
+                  </li>
+                  <li class="tecnologic-items"><a href="#">Informática</a>
+                    <ul>
+                      <li><a href="#">Componentes para PC</a></li>
+                      <li><a href="#">Impressão</a></li>
+                      <li><a href="#">Acessórios par Notebook</a></li>
+                      <li><a href="#">Conectividade e Redes</a></li>
+                    </ul>
+                  
+                  </li>
+                  <li class="tecnologic-items"><a href="#">Eletrônicos, Áudio e Vídeo</a>
+                    <ul class="subitens-tecnologic">
+                      <li><a href="#">Acessórios para Áudio e Vídeo</a></li>
+                      <li><a href="#">Áudio Portátil e Acessórios</a></li>
+                      <li><a href="#">Componentes Eletrônicos</a></li>
+                      <li><a href="#">Equipamentos para DJs</a></li>
+                    </ul>
+                  
+                  </li>
+                  <li class="tecnologic-items"><a href="#">Televisores</a></li>
+                  
+                  
+                </ul>
+
+              </li>
+
+              <li><a href="#">Casa e Móveis</a></li>
+              <li><a href="#">Eletrodomésticos</a></li>
+              <li><a href="#">Esportes e Fitness</a></li>
+              <li><a href="#">Ferramentas</a></li>
+              <li><a href="#">Construção</a></li>
+              <li><a href="#">Industria e Comércio</a></li>
+              <li><a href="#">Saúde</a></li>
+              <li><a href="#">Acessórios para veículos </a></li>
+              <li><a href="#">Beleza e cuidado pessoal</a></li>
+              <li><a href="#">Moda</a></li>
+              <li><a href="#">Bebês</a></li>
+              <li><a href="#">Brinquedo</a></li>
+              <li><a href="#">Imóveis</a></li>
+              <li><a href="#">Compra Internacional</a></li>
+              <li><a href="#">Produtos sustentáveis</a></li>
+              <li><a href="#">Mais vendidos</a></li>
+              <li><a href="#">Lojas Oficiais</a></li>
+              <li><a href="#">Ver outras Categorias</a></li>
+
             </ul>
-          </li>
-          <li class="nav-itens"><a href="#">Ajuda</a></li>
-          <li class="nav-itens"><a href="#">Cálculos</a></li>
-          <li class="nav-itens"><a href="#">Outros modelos</a>
-            <ul class="sub-nav">
-              <li><a href="#"></a>Item1</li>
-              <li><a href="#"></a>Item2</li>
-              <li><a href="#"></a>Item3</li>
-            </ul>
-          
+
+            
+
           </li>
         </ul>
-        
-    </div>
 
-      
+      </div>
+
+
     </div>
 
 
   </nav>
 
-  <main>
-    
-    <div class="container">
-      <div>
-        
-        <!--<img class="img" src="./img/calculadora.jpg" alt="" srcset="">-->
-      </div>
-    
-    <div class="calculadora" >
-
-    <div class="botaos">
-          <div>
-            <input type="text" name="" id="display">
-          </div>
-          
-         
-        <div class="btn-1">
-
-          <label class="shift">Shift</label>
-          <input type="button" value="" id="shift">
-          <label class="alpha">ALPHA</label>
-          <input type="button" value="" id="alpha">
-          <input type="button" value="Replay" id="replay">
-
-          <label class="mode-clr">mode CLR</label>
-          <input type="button" 
-          value="" id="mode-clr">
-          <label class="on">ON</label>
-          <input type="button" value="" id="on">
-         
-        <br><br>
-        </div>
-          
-        <div class="btn-2">
-          <div>
-          <input type="button" value="x-1" id="x-1">
-          <input type="button" value="nCr" id="nCr">
-          <input type="button" value="pol(" id="pol" >
-          <input type="button" value="x3" id="x3">
-        </div>
-          <div">
-          <input type="button" value="ab/c" id="ab/c">
-          <input type="button" value="pot" id="pot">
-          <input type="button" value="x2" id="x2">
-          <input type="button" value="^" id="row">
-          <input type="button" value="log" id="log">
-          <input type="button" value="In" id="In">
-      
-          <input type="button" value="(-)" id="m-">
-          <input type="button" value=".'''" id="aspas">
-          <input type="button" value="hyp" id="hyp">
-          <input type="button" value="sin" id="sin">
-          <input type="button" value="cos" id="cos">
-          <input type="button" value="tan" id="tan">
-        
-
-          <input type="button" value="RCL" id="rcl">
-          <input type="button" value="ENG" id="eng">
-          <input type="button" value="(">
-          <input type="button" value=")">
-          <input type="button" value="," id="virgula">
-          <input type="button" value="M+">
-        </div>
-        </div>
 
 
-      <div class="btn-3" >  
-      
-       <input type="button" value="7" id="n7">
-       <input type="button" value="8" id="n8">
-       <input type="button" value="9" id="n9">
-       <input type="button" value="DEL" id="del">
-       <input type="button" value="AC" id="ac">
-      
-       <br>
-       <input type="button" value="4" id="n4">
-       <input type="button" value="5" id="n5">
-       <input type="button" value="6" id="n6">
-       <input type="button" value="X" id="mult">
-       <input type="button" value="÷" id="divisao">
-      
-       
-       <input type="button" value="1" id="1">
-       <input type="button" value="2" id="2">
-       <input type="button" value="3" id="3">
-       <input type="button" value="+" id="soma">
-       <input type="button" value="-" id="subt">
-       
-       
-       <input type="button" value="0" id="n0">
-       <input type="button" value="." id="ponto">
-       <input type="button" value="EXP" id="exp">
-       <input type="button" value="Ans" id="ans">
-       <input type="button" value="=" id="resultado">
-       </div>
-      </div>
-    </div>
-  </div>
-  </main>
-  
 </body>
+
 </html>

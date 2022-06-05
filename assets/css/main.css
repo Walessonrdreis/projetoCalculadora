@@ -2,7 +2,7 @@
     margin: 0 ;
     padding: 0;
     
-    color: aliceblue;
+    color: rgb(41, 40, 40);
     box-sizing: border-box;
 }
 div.container{
@@ -19,16 +19,33 @@ div.container{
     background-color: burlywood;
 }
 
-/**menu*/
+/**menu
+##   ##  #######  ##   ##  ##   ##
+### ###   ##   #  ###  ##  ##   ##
+#######   ## #    #### ##  ##   ##
+#######   ####    ## ####  ##   ##
+## # ##   ## #    ##  ###  ##   ##
+##   ##   ##   #  ##   ##  ##   ##
+##   ##  #######  ##   ##   #####
+*/
+
 .nav-menu{
     width: 100%;
     height: 50px;
     position: relative;
-   background-color: #000;
+    background-color: rgb(195, 219, 18);
     display: block;
     
 }
-/*hamburguer*/
+/*##   ##    ##     ##   ##  ######   ##   ##  ######     ####   ##   ##  #######  ######
+ ##   ##   ####    ### ###   ##  ##  ##   ##   ##  ##   ##  ##  ##   ##   ##   #   ##  ##
+ ##   ##  ##  ##   #######   ##  ##  ##   ##   ##  ##  ##       ##   ##   ## #     ##  ##
+ #######  ##  ##   #######   #####   ##   ##   #####   ##       ##   ##   ####     #####
+ ##   ##  ######   ## # ##   ##  ##  ##   ##   ## ##   ##  ###  ##   ##   ## #     ## ##
+ ##   ##  ##  ##   ##   ##   ##  ##  ##   ##   ##  ##   ##  ##  ##   ##   ##   #   ##  ##
+ ##   ##  ##  ##   ##   ##  ######    #####   #### ##    #####   #####   #######  #### ##
+
+*/
 
 .wrapper{
    
@@ -53,7 +70,7 @@ div.container{
 .checkbox .trace{
     width: 40px;
     height:6px ;
-    background-color: white;
+    background-color: rgb(34, 33, 33);
     position: absolute;
     border-radius: 4px;
     transition: 0.5s ease-in-out;
@@ -92,186 +109,230 @@ div.container{
    transform: rotate(-45deg);
    top: 28px;
 }
-/**/
-ul.nav-bar{
-    width:80%;
-    position: relative;
-    display: flex;
-    left: 10%;
-    flex-direction: row;
-    justify-content: right;
-    top: 10px;
-   
 
+/*
+  #####   #######  ######     ##            ##       ##
+ ##   ##   ##   #  # ## #    ####            ##     ##
+ #         ## #      ##     ##  ##            ##   ##
+  #####    ####      ##     ##  ##             ## ##
+      ##   ## #      ##     ######              ###
+ ##   ##   ##   #    ##     ##  ##               #
+  #####   #######   ####    ##  ##             
+
+
+
+
+
+*/
+.wrapper2{
+   
+    width: 60px;
+    height: 15px;
+    display: flex;
+    
+    
+    
+    
+  
+    
+}
+.checkbox2{
+    height: 50px;
+    width: 60px;
+    display: flex;
+    justify-content: center;
+    position: relative;/*para deixar os traços relativos a ele, o checkbox*/
+    cursor: pointer;
+  
+}
+.checkbox2 .trace2{
+    width: 8px;
+    height:1px ;
+    background-color: rgb(39, 37, 37);
+   position: relative;
+   left: 55px;
+   
+   bottom:8px;
+   
+    
+    border-radius: 4px;
+    transition: 0.5s ease-in-out;
+    
+
+
+}
+.checkbox2 .trace2:nth-child(1){
+    
+    transform: rotate(-40deg);
+}
+.checkbox2 .trace2:nth-child(2){
+    
+    left: 41px; /*muda formato da seta em conjunto com left do position dos traços*/
+    transform: rotate(40deg);
+}
+#toggle2{
+    
+   display: none;
+    
+
+}
+/*fim seta baixo*/
+/**/
+ul{
+    position: relative;
+    left: 30%;
 }
 ul li {
-    list-style: none;
-    font-size: 18px;
-    margin-left: 10px;
-    letter-spacing: 1.5px;
+    display: inline-block;
+    
+    justify-content: flex-end;
+    transition: all .3s;
+    padding-top: 10px;
+    box-sizing: border-box;
+   
+    
     
 }
-ul li a {
+ul li a{
+    color: #343525;
     text-decoration: none;
-    text-transform: capitalize;
-
-} 
-ul li ul {
-    visibility: hidden;
-}
-
-
-
-
-
-
-main{
-    background-color: blueviolet;
-}
-
-.img{
-    width: 200px;
-    height: 400px;
     
 }
+ul li a:hover{
+    color: black;
+}
+/*
+   ####     ##     ######   #######    ####    #####   ######    ####      ##
+  ##  ##   ####    # ## #    ##   #   ##  ##  ##   ##   ##  ##    ##      ####
+ ##       ##  ##     ##      ## #    ##       ##   ##   ##  ##    ##     ##  ##
+ ##       ##  ##     ##      ####    ##       ##   ##   #####     ##     ##  ##
+ ##       ######     ##      ## #    ##  ###  ##   ##   ## ##     ##     ######
+  ##  ##  ##  ##     ##      ##   #   ##  ##  ##   ##   ##  ##    ##     ##  ##
+   ####   ##  ##    ####    #######    #####   #####   #### ##   ####    ##  ##
 
-/*calculadora*/
-div.calculadora{
+
+*/
+ul li ul.list-category {
+   visibility: hidden;
+}
+ul li:hover ul.list-category{
+    visibility:visible ;
+}
+
+ul li ul.list-category {
     width: 300px;
-    height: 570px;
-    margin: auto;
-    position: relative;
-    margin-top: 20px;
+    height: 1150px;
     
-    text-align: center;
    
-    background-color: #000;
-    border: 2px solid #000;
-    border-radius: 2ex;
-}
-div.botaos{
-    margin-top: 20px;
-    position: relative;
-}
-/*teclas*/
-#display{
-    width: 90%;
-    height: 80px;
-    border: 2px solid rgb(66, 65, 65);
+    background-color:  #343534; 
     border-radius: 1ex;
-    background-color: aliceblue;
-    margin-bottom: 80px;
 
-    position: relative;
-    top: 40px;
+    position: absolute;
+    top: 85%;
+    left: -285%;
+   
+   
+   
+    
+
+}
+ul li ul.list-category::before{
+    border-color: transparent transparent  #343534;
+    border-style: solid;
+    border-width: 14px;
+    content: "";
+    left: 86.2%;
+    margin-top: -25px;
+    position: absolute;
+}
+
+ul li ul.list-category li{
+    display: flex;
+    justify-content: left;
+    margin-top: 20px;
+   
+    
+    
+}
+ul li ul.list-category li a{
+    font-size: 20px;
+    color: rgb(220, 235, 235);
+    list-style: none;
+    text-decoration: none;
+    margin-left: 20px;
+   
+    
+}
+ul li ul.list-category li:hover{
+    background-color: rgb(23, 112, 171);
+}
+
+/*
+ ######   #######    ####   ##   ##   #####   ####      #####     ####    ####      ##
+ # ## #    ##   #   ##  ##  ###  ##  ##   ##   ##      ##   ##   ##  ##    ##      ####
+   ##      ## #    ##       #### ##  ##   ##   ##      ##   ##  ##         ##     ##  ##
+   ##      ####    ##       ## ####  ##   ##   ##      ##   ##  ##         ##     ##  ##
+   ##      ## #    ##       ##  ###  ##   ##   ##   #  ##   ##  ##  ###    ##     ######
+   ##      ##   #   ##  ##  ##   ##  ##   ##   ##  ##  ##   ##   ##  ##    ##     ##  ##
+  ####    #######    ####   ##   ##   #####   #######   #####     #####   ####    ##  ##
+
+
+*/
+ul.list-tecnologic{
+width: 700px;
+height: 1150px;
+position: absolute;
+top: 0px;
+left: 300px;
+border: 2px solid #276baf;
+border-radius: 0ex 1ex 1ex 0;
+background-color: rgb(203, 194, 211);
+
+visibility: hidden;
+}
+
+ul.list-tecnologic li.tecnologic-items{
+  
+  position: flex;
+   width: 210px;
+   height: 300px;
+  
+   
    
 }
-label{
-    font-size: 8px;
-    position: absolute;
-    
+ul.list-tecnologic li.tecnologic-items {
+    display: inline-table;
 }
-input{
-    width: 30px;
-    border-radius: 0.5ex;
-    border-color: #21272f;
-    margin: 0px 8px 12px 8px;
-    color: aliceblue;
-    background-color: #706d72;
-}
-/*primeiro conjunto de botões*/
-.btn-1{
+ul.list-tecnologic li.tecnologic-items ul li a {
+  color: #343525;
+  font-size: 16px;
+  position: relative;
+  margin-left: 0px;
+ 
+  left: -50px;
   
-    height: 80px;
-}
-.btn-1 input#shift,
-.btn-1 input#alpha,
-.btn-1 input#mode-clr,
-.btn-1 input#on{
-width: 30px;
-margin: 0px 7px ;
-border-radius: 3ex;
-position: relative;
-top: 20px;
 
 }
-
-label.shift
-{
-  left: 10px;
-}
-label.alpha{
-    left: 50px;
-}
-.btn-1 input#shift,
-.btn-1 input#alpha{
-    right: 10px;
-    top: -5px;
-}
-
-input#replay{
-    width:70px;
-    height: 80px;
-    border-radius: 30rem 30rem 50rem 50rem;
-    color: #000;
-}
-
-label.mode-clr{
-    right: 50px;
-}
-label.on{
-    right: 15px;
-}
-.btn-1 input#mode-clr,
-.btn-1 input#on{
-    top: -5px;
-    left: 10px;
-}
-/*segundo ...*/
-.btn-2{
-    
-    height: 150px;
-    position: relative;
-}
-.btn-2 input{
-    position: relative;
-    background-color: #21272f;
-    color: aliceblue;
-    bottom: 10px;
-}
-input#x-1, input#nCr{
-    right: 50px;
-    bottom: 15px;
-}
-input#pol, input#x3{
-    left: 50px;
-    bottom: 15px;
-}
-
-/*terceiro...*/
-.btn-3{
-    
-   height:150px;
+ul.list-tecnologic li.tecnologic-items a{
+    color: #343525;
+    font-size: 18px;
   
 }
-.btn-3 input{
-    width: 40px;
-    height: 30px;
 
-    position: relative;
-    margin: 0px 8px 10px 8px;
-    bottom: 15px;
-    background-color: #706d72;
-    border-radius: 3px 3px 7px 7px;
-}
-.btn-3 input#del,.btn-3 input#ac{
-    background-color: brown;
-}
 
-@media screen and (max-width:374px){
-    .calculadora{
-        position: relative;
-        width: 1050%;
-        top: 10px;
-    }
+li.tecnology:hover ul.list-tecnologic{
+visibility: visible;
 }
+    
+
+
+
+
+
+
+
+
+
+
+
+
